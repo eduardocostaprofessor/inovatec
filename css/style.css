@@ -4,11 +4,12 @@
     box-sizing: border-box;
 }
 body{
-    padding: 1% 5% 0 5%;
+    padding-top: 1%;
     font-family: 'Chau Philomene One', sans-serif;
 }
 
 header{
+    margin-left: 5%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -99,7 +100,8 @@ footer{
     color: white;
     margin-top: 3%;
     height: 60px;
-    position: relative;
+    width: 100%;
+    position: fixed;
     bottom: 0;
 
 }
