@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 1% 5% 0 5%;
+    font-family: 'Chau Philomene One', sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header h1{
+    font-family: 'Luckiest Guy', cursive;
+    margin-left: 1%;
+    
+}
+nav{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+header nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    padding-right: 2%;
+    padding-left: 2%;
+    padding-bottom: 5%;
+    border-bottom-right-radius: 70%;
+    
+    
+}
+header nav a:hover{
+    background-color: #f0c305;
+}
+
+
+/* #apresentacao p{
+    width: 50%;
+    text-align: center;
+    line-height: 2rem;
+    border: 3px solid black;
+   border-radius: 10% 10%  10%  10%; 
+   background-color: #f0c305
+
+} */
+#menu-slide{
+    display: flex;
+    justify-content: center;
+}
+aside{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 1%;
+    height:380px;
+    width: 700px;
+    border-radius: 10px 10px 10px 10px;
+
+
+}
+aside button{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-style: none;
+    outline-style: none;
+}
+#btn1{
+ float: left;
+ position: absolute;
+ margin-left: -11.3%;
+
+}
+
+#btn2{
+    display: inline-block;
+    position: absolute;
+    margin-left: 725px;
+}
+aside figure{
+    height: 380px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    margin-top: 3%;
+    height: 60px;
+    position: relative;
+    bottom: 0;
+
+}
