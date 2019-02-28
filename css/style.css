@@ -3,9 +3,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body{
+    height: 100%;
+}
 body{
     padding-top: 1%;
     font-family: 'Chau Philomene One', sans-serif;
+    /* background-image: linear-gradient(#ffffff,#b5b6ae,#8a8686);
+    background-repeat: no-repeat;
+     */
 }
 
 header{
@@ -74,6 +80,7 @@ aside button{
     border-style: none;
     outline-style: none;
 }
+
 #btn1{
  float: left;
  position: absolute;
@@ -103,5 +110,4 @@ footer{
     width: 100%;
     position: fixed;
     bottom: 0;
-
 }
