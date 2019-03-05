@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Chau Philomene One', sans-serif;
+    /* background-image: linear-gradient(#ffffff,#b5b6ae,#8a8686);
+    background-repeat: no-repeat;
+     */
+}
+
+
+header i {
+    margin-left: 5px;
+}
+
+header input {
+    display: none;
+}
+
+header figure img {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+header figure{
+    display: inline-flex;
+    vertical-align: middle; 
+}
+
+header h1{
+    display: inline;
+    font-size: 1.5em;
+}
+
+header nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    padding: 0 10% 5px 10%;
+    left: 0;
+    width: 100%;
+    background-color: black;
+}
+
+header nav a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    background-color: #f0c305;
+    border-radius: 3px;
+}
+
+header input:checked~nav {
+    display: flex;
+}
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.2;
+    margin-top: 10%;
+}
+article p{
+    width: 80%;
+    font-size: 0.9rem;
+}
+article h1{
+    background-color: #f0c305;
+    text-align: center;
+    width: 80%;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    margin-top: 5%;
+    height: 60px;
+    width: 100%;
+    text-align: center;
+}
+/* Tablets */
+@media screen and (min-width: 768px) {}
+/* computadores */
+@media screen and (min-width: 1024px) {}
