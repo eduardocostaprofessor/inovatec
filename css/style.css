@@ -1,104 +1,83 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html, body{
-    height: 100%;
-}
-body{
-    padding-top: 1%;
+
+
+body {
     font-family: 'Chau Philomene One', sans-serif;
     /* background-image: linear-gradient(#ffffff,#b5b6ae,#8a8686);
     background-repeat: no-repeat;
      */
 }
 
-header{
-    margin-left: 5%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
+
+header i {
+    margin-left: 2%;
+}
+#logo{
+    display: none;
+}
+header input {
+    display: none;
+}
+
+header figure img {
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+header figure{
+    display: inline-flex;
+    vertical-align: middle; 
 }
 
 header h1{
-    font-family: 'Luckiest Guy', cursive;
-    margin-left: 1%;
-    
-}
-nav{
-    width: 70%;
-    display: flex;
-    justify-content: flex-end;
-}
-header nav a{
-    color: black;
-    text-decoration: none;
-    font-size: 1rem;
-    padding-right: 2%;
-    padding-left: 2%;
-    padding-bottom: 5%;
-    border-bottom-right-radius: 70%;
-    
-    
-}
-header nav a:hover{
-    background-color: #f0c305;
+    display: inline;
+    font-size: 1.5em;
 }
 
-
-/* #apresentacao p{
-    width: 50%;
-    text-align: center;
-    line-height: 2rem;
-    border: 3px solid black;
-   border-radius: 10% 10%  10%  10%; 
-   background-color: #f0c305
-} */
-#menu-slide{
-    display: flex;
-    justify-content: center;
-}
-aside{
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin-top: 1%;
-    height:380px;
-    width: 700px;
-    border-radius: 10px 10px 10px 10px;
-
-
-}
-aside button{
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    background-color: black;
-    color: white;
-    border-style: none;
-    outline-style: none;
-}
-
-#btn1{
- float: left;
- position: absolute;
- margin-left: -11.3%;
-
-}
-
-#btn2{
-    display: inline-block;
+header nav {
+    display: none;
+    flex-direction: column;
     position: absolute;
-    margin-left: 725px;
+    padding: 0 10% 5px 10%;
+    left: 0;
+    width: 100%;
+    background-color: black;
 }
-aside figure{
-    height: 380px;
-    width: 700px;
+
+header nav a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    background-color: #f0c305;
+    border-radius: 3px;
+}
+
+header input:checked~nav {
+    display: flex;
+}
+section{
+    display: none;
+}
+#menu-slide{
+    display: none;
+}
+#apresentacao{
+    margin-top: 10%;
     display: flex;
     justify-content: center;
 }
-footer{
+#apresentacao p{
+    width: 80%;
+    text-align: center;
+}
+footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,4 +88,115 @@ footer{
     width: 100%;
     position: fixed;
     bottom: 0;
+    text-align: center;
+}
+/* Tablets */
+@media screen and (min-width: 768px) {
+    #apresentacao p{
+        font-size: 1.2rem;
+    }
+    header h1{
+        font-size: 1.7em;
+    }
+
+}
+/* computadores */
+@media screen and (min-width: 1024px) {
+    body{
+        padding-top: 1%;
+        font-family: 'Chau Philomene One', sans-serif;
+        /* background-image: linear-gradient(#ffffff,#b5b6ae,#8a8686);
+        background-repeat: no-repeat;
+         */
+    }
+    header{
+        margin-left: 5%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+   header label{
+       display: none;
+   }
+   #logo-mobile{
+       display: none;
+   }
+   #logo{
+    display: inline-block;
+    }
+
+   header h1{
+    font-size: 2rem;
+    font-family: 'Luckiest Guy', cursive;
+    margin-left: 1%;
+    }
+
+   header nav{
+       margin-left: 10%;
+       background-color: white;
+       position: relative;
+        width: 70%;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+   }
+   header nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-bottom: 5%;
+    border-bottom-right-radius: 70% !important; 
+    }
+    header nav a:hover{
+        background-color: #f0c305;
+    }
+    #apresentacao{
+        display: none;
+    }
+    #menu-slide{
+        display: flex;
+        justify-content: center;
+    }
+    aside{
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-top: 1%;
+        height:380px;
+        width: 700px;
+        border-radius: 10px 10px 10px 10px;
+    
+    
+    }
+    aside button{
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        background-color: black;
+        color: white;
+        border-style: none;
+        outline-style: none;
+    }
+    
+    #btn1{
+     float: left;
+     position: absolute;
+     margin-left: -11.3%;
+    
+    }
+    
+    #btn2{
+        display: inline-block;
+        position: absolute;
+        margin-left: 725px;
+    }
+    aside figure{
+        height: 380px;
+        width: 700px;
+        display: flex;
+        justify-content: center;
+    }
+
 }
